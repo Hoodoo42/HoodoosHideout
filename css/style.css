@@ -69,7 +69,7 @@ h1{
   margin: 15px;
 }
 
-
+/*--------HIDEOUT MENU----------------*/
 .menu{
   height: 500px;
   width: 100%;
@@ -92,8 +92,6 @@ p{
   font-family: 'Quantico', sans-serif;
   font-size: 1.8rem;
 }
-
-
 
 #pizza {
   margin: auto;
@@ -118,4 +116,28 @@ p{
     background-color:burlywood;
     width: 45%;
     height: 75%;
+  }
+
+/*-----------HACKATHON--------------*/
+
+/*-----------CONTACTS--------------*/
+
+.contact a{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+
+
+
+/*----------FOOTER-----------------------*/
+  .footer{
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    color: red;
+  }
+  footer a{
+    color: aliceblue;
+    text-decoration: none;
   }
