@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: darkslategray;
 }
 
 
@@ -47,3 +48,74 @@ span {
   text-decoration: none;
   padding: 15px;
 }
+
+/*-------HIDEOUT MAIN---------*/
+
+main{
+  text-align: center;
+}
+
+h1{
+  font-family: 'Quantico', sans-serif;
+  color: aqua;
+}
+
+.bench{
+  height: 600px;
+  width: 100%;
+}
+
+.main-content{
+  margin: 15px;
+}
+
+
+.menu{
+  height: 500px;
+  width: 100%;
+  background-image: url(../imgs/bench.jpg);
+  background-size:500px 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.menu a{
+  font-size: 2rem;
+  margin: 10px, 15px, 10x, 15px;
+  color: red;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: wheat;
+  
+}
+
+p{
+  font-family: 'Quantico', sans-serif;
+  font-size: 1.8rem;
+}
+
+
+
+#pizza {
+  margin: auto;
+  background-color:burlywood;
+  width: 45%;
+  height: 75%;
+}
+#snacks {
+  margin: auto;
+  background-color:burlywood;
+  width: 45%;
+  height: 75%;
+}
+#hot {
+  margin: auto;
+  background-color:burlywood;
+  width: 45%;
+  height: 75%;
+}
+#cold {
+    margin: auto;
+    background-color:burlywood;
+    width: 45%;
+    height: 75%;
+  }
