@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+}
+
+
+/*--------HEADER--------------*/
+.header {
+  background-color: black;
+}
+
+#logo-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo-img {
+  margin-top: 15px;
+}
+
+#logo {
+  color: red;
+  font-family: "Special Elite", cursive;
+  font-size: 6rem;
+}
+
+span {
+  color: aliceblue;
+  font-size: 1.8rem;
+  float: right;
+  margin-right: 25%;
+}
+
+#nav-container {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  background-color: red;
+}
+
+.nav {
+  font-size: 2rem;
+  margin: 10px, 15px, 10x, 15px;
+}
+
+.nav a {
+  color: aliceblue;
+  text-decoration: none;
+  padding: 15px;
+}
