@@ -17,6 +17,10 @@ body {
   height: 200px;
 }
 
+/*--------ANIMATIONS--------------*/
+
+
+
 /*--------HEADER--------------*/
 
 .header {
@@ -98,6 +102,9 @@ span {
   color: rgb(49, 219, 49);
 }
 
+
+
+
 /*-------HIDEOUT MAIN---------*/
 main {
   display: grid;
@@ -162,77 +169,7 @@ main {
   background-color: #820000;
   color: #e4aa4d;
 }
-/*----OLD---HIDEOUT MAIN---------*/
-/* OLD HOME PAGE LAYOUT
-main {
-  text-align: center;
-}
 
-h1 {
-  font-family: "Quantico", sans-serif;
-  color: #c9e1be;
-}
-
-.bench {
-  height: 600px;
-  width: 100%;
-}
-
-.main-content {
-  margin: 15px;
-}
-
-/*--------HIDEOUT MENU----------------*/
-/* OLD HOME PAGE LAYOUT
-
-.menu {
-
-  height: 500px;
-  width: 100%;
-  background-image: url(../images/bench.jpg);
-  background-size: 500px 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.menu a {
-  font-size: 2rem;
-  margin: 10px, 15px, 10x, 15px;
-  color: red;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: wheat;
-}
-
-p {
-  font-family: "Quantico", sans-serif;
-  font-size: 1.8rem;
-}
-
-#pizza {
-  margin: auto;
-  background-color: burlywood;
-  width: 45%;
-  height: 75%;
-}
-#snacks {
-  margin: auto;
-  background-color: burlywood;
-  width: 45%;
-  height: 75%;
-}
-#hot {
-  margin: auto;
-  background-color: burlywood;
-  width: 45%;
-  height: 75%;
-}
-#cold {
-  margin: auto;
-  background-color: burlywood;
-  width: 45%;
-  height: 75%;
-}
-*/
 /*------------MENU------------------*/
 
 #hoodoosMenu {
@@ -260,6 +197,8 @@ menu img {
   width: 250px;
   height: 350px;
   border: 1px solid #c9e1be;
+
+  transition: all .5s ease-in-out;
 }
 
 menu img:hover {
