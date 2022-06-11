@@ -19,6 +19,56 @@ body {
 
 /*--------ANIMATIONS--------------*/
 
+@keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  
+  25%{
+    opacity: 0.25;
+    }
+  
+  50%{
+    opacity: o.5;
+  }
+    
+  75%{
+    opacity: 0.75;
+  }
+
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes emailSlidein{
+
+  0%{
+    position: relative;
+    right: 130px;
+  }
+  100%{
+    position: relative;
+    right: 0px;
+  }
+  
+}
+
+@keyframes telSlidein{
+
+  0%{
+    position: relative;
+    left: 130px;
+  }
+  100%{
+    position: relative;
+    left: 0%;
+  }
+  
+}
+
+
 
 
 /*--------HEADER--------------*/
@@ -106,13 +156,13 @@ span {
 
 
 /*-------HIDEOUT MAIN---------*/
-main {
+#page-main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
 }
 
-
+/*I was stuck on griding out my contacts page for half the day. I realized while looking at the inspector that one rule was overiding the other. It fixed when I made my specified the main in my index to page-main*/
 
 
 #menu-div { /*make only div background transparent not items*/
@@ -121,16 +171,21 @@ main {
   justify-items: center;
   row-gap: 15px;
 
+  width: 90%;
+
   padding: 20px 0;
   margin: 30px 0;
   background-color:antiquewhite;
-  opacity: 0.5;
+  
 }
 
 #menu-div > img {
-  width: 30%;
+  width: 50%;
   padding-bottom: 15px;
+
+  animation: iconOpacity 5s ease-in;
 }
+
 
 #menu-div > button {
   font-size: 1.5rem;
@@ -143,21 +198,31 @@ main {
   color: #e4aa4d;
 }
 
+#menu-button{
+  animation: iconDropdown 2s linear;
+}
+
 #hack-div {
   display: grid;
   justify-items: center;
   row-gap: 15px;
 
+  width: 90%;
+
   padding: 20px 0;
   margin: 30px 0;
   background-color:antiquewhite;
-  opacity: 0.5;
+  
 }
 
 #hack-div > img {
-  width: 30%;
+  width: 50%;
   padding-bottom: 15px;
+
+  animation: iconOpacity 4s ease-in;
+
 }
+
 
 #hack-div > button {
   font-size: 1.5rem;
@@ -188,7 +253,7 @@ main {
 menu {
   padding-right: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   column-gap: 10px;
   row-gap: 10px;
 }
@@ -204,7 +269,7 @@ menu img {
 menu img:hover {
   width: 260px;
   height: 360px;
-  box-shadow: 3px 3px 5px 10px #087c6f;
+  box-shadow: 3px 3px 5px 5px #087c6f;
 }
 
 menu > article {
@@ -239,12 +304,38 @@ h2 + p + p {
 }
 
 /*-----------CONTACTS--------------*/
+#contact-main{
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+}
+
+#contact-main>h1{
+  background-color: antiquewhite;
+  text-align: center;
+  width: 100%;
+  
+
+}
+
+#contact-main>iframe{
+  width: 80%;
+}
 
 .contact a {
   color: aliceblue;
   text-decoration: none;
+
+  font-size: 1.2rem;
 }
 
+#email{
+  animation: emailSlidein 1s ease-in-out; 
+}
+
+#tel{
+  animation: telSlidein 1s ease-in-out;
+}
 /*----------FOOTER-----------------------*/
 footer{
   display: grid;
@@ -253,18 +344,18 @@ footer{
   align-items: center;
   justify-items: center;
  
-  background-color: black;
+  background-image: url(../images/nightSky.jpg);
   width: 100%;
   height: fit-content;
 }
 
-.footer {
+footer {
   display: grid;
   grid-template-columns: auto;
 
   
 
-  width: 50%;
+
   font-size: 1.5rem;
   text-align: center;
   color: red;
@@ -276,6 +367,7 @@ footer a {
   text-decoration: none;
 
 }
+
 
 /*-----------MEDIA QUERIES---------------------*/
 @media only screen and (min-width: 600px) {
