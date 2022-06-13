@@ -1,0 +1,63 @@
+/*--------ANIMATIONS--------------*/
+@keyframes emailSlidein{
+
+    0%{
+      position: relative;
+      right: 130px;
+    }
+    100%{
+      position: relative;
+      right: 0px;
+    }
+    
+  }
+  
+  @keyframes telSlidein{
+  
+    0%{
+      position: relative;
+      left: 130px;
+    }
+    100%{
+      position: relative;
+      left: 0%;
+    }
+    
+  }
+  
+  
+  #contact-main{
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+}
+
+#contact-main>h1{
+  background-color: antiquewhite;
+  text-align: center;
+  width: 100%;
+  
+
+}
+
+#contact-main>iframe{
+  width: 80%;
+}
+
+.contact a {
+  color: aliceblue;
+  text-decoration: none;
+
+  font-size: 1.2rem;
+}
+
+#email{
+  animation: emailSlidein 1s ease-in-out; 
+}
+
+#tel{
+  animation: telSlidein 1s ease-in-out;
+}
+  
+  
+  

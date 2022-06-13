@@ -1,87 +1,15 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  display: grid;
-
-  min-height: 100vh;
-  width: 100%;
- /* background-image: url(../images/dark.jpg); make full size no repeat*/
-  background-color: rgb(30, 34, 34);
-}
-
 #logo-img {
   width: 200px;
   height: 200px;
 }
 
-/*--------ANIMATIONS--------------*/
-
-@keyframes iconOpacity {
-  0% {
-    opacity: 0;
-  }
-  
-  25%{
-    opacity: 0.25;
-    }
-  
-  50%{
-    opacity: o.5;
-  }
-    
-  75%{
-    opacity: 0.75;
-  }
-
-  100%{
-    opacity: 1;
-  }
-}
-
-
-@keyframes emailSlidein{
-
-  0%{
-    position: relative;
-    right: 130px;
-  }
-  100%{
-    position: relative;
-    right: 0px;
-  }
-  
-}
-
-@keyframes telSlidein{
-
-  0%{
-    position: relative;
-    left: 130px;
-  }
-  100%{
-    position: relative;
-    left: 0%;
-  }
-  
-}
-
-
-
-
-/*--------HEADER--------------*/
-
 .header {
   display: grid;
   grid-template-rows: 1fr;
-
   background-color: black;
   background-image: url(../images/nightSky.jpg);
   background-size: 100%;
   background-size: cover;
-
   width: 100%;
   min-height: 300px;
 }
@@ -93,7 +21,6 @@ body {
   align-items: center;
   text-align: center;
   row-gap: 15px;
-
   width: 100%;
 }
 
@@ -105,9 +32,9 @@ body {
   color: #820000;
   font-family: "Special Elite", cursive;
   font-size: 3rem;
-
   padding: 0 10px 10px;
 }
+
 /*----and Pizzeria----*/
 span {
   color: #e4aa4d;
@@ -120,7 +47,6 @@ span {
 #nav-container {
   background-color: #820000;
   align-self: end;
-
   min-height: 50px;
 }
 
@@ -128,7 +54,6 @@ span {
   display: grid;
   grid-template-columns: repeat(autofit, minmax(200px, 1fr));
   justify-items: center;
-
   font-size: 2rem;
   margin: 10px, 15px, 10x, 15px;
 }
@@ -152,10 +77,80 @@ span {
   color: rgb(49, 219, 49);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(30, 34, 34);
+}
 
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: end;
+  align-items: center;
+  justify-items: center;
+  background-image: url(../images/nightSky.jpg);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
 
-/*-------HIDEOUT MAIN---------*/
+footer {
+  display: grid;
+  grid-template-columns: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  color: red;
+}
+
+footer a {
+  font-size: 1.5rem;
+  color: #e4aa4d;
+  text-decoration: none;
+}
+
+/*--------ANIMATIONS--------------*/
+@-webkit-keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes iconOpacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 #page-main {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -163,79 +158,57 @@ span {
 }
 
 /*I was stuck on griding out my contacts page for half the day. I realized while looking at the inspector that one rule was overiding the other. It fixed when I made my specified the main in my index to page-main*/
-
-
-#menu-div { /*make only div background transparent not items*/
+#menu-div {
+  /*make only div background transparent not items*/
   display: grid;
-
   justify-items: center;
   row-gap: 15px;
-
   width: 90%;
-
   padding: 20px 0;
   margin: 30px 0;
-  background-color:antiquewhite;
-  
+  background-color: antiquewhite;
 }
-
 #menu-div > img {
   width: 50%;
   padding-bottom: 15px;
-
-  animation: iconOpacity 5s ease-in;
+  -webkit-animation: iconOpacity 5s ease-in;
+          animation: iconOpacity 5s ease-in;
 }
-
-
 #menu-div > button {
   font-size: 1.5rem;
   width: 100px;
   height: 100px;
   border-radius: 100px;
   padding: 10px;
-
   background-color: #820000;
   color: #e4aa4d;
-}
-
-#menu-button{
-  animation: iconDropdown 2s linear;
 }
 
 #hack-div {
   display: grid;
   justify-items: center;
   row-gap: 15px;
-
   width: 90%;
-
   padding: 20px 0;
   margin: 30px 0;
-  background-color:antiquewhite;
-  
+  background-color: antiquewhite;
 }
 
-#hack-div > img {
-  width: 50%;
-  padding-bottom: 15px;
-
-  animation: iconOpacity 4s ease-in;
-
-}
-
-
-#hack-div > button {
+#hack-div #hack-div > button {
   font-size: 1.5rem;
   width: 100px;
   height: 100px;
   border-radius: 100px;
   padding: 10px;
-
   background-color: #820000;
   color: #e4aa4d;
 }
-
-/*------------MENU------------------*/
+#hack-div #hack-div > img {
+  width: 50%;
+  padding-bottom: 15px;
+  -webkit-animation: iconOpacity 4s ease-in;
+          animation: iconOpacity 4s ease-in;
+}
 
 #hoodoosMenu {
   display: grid;
@@ -250,11 +223,13 @@ span {
   font-size: 1em;
   margin: 0 0 15px 0;
 }
+
 menu {
   padding-right: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  column-gap: 10px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
   row-gap: 10px;
 }
 
@@ -262,8 +237,7 @@ menu img {
   width: 250px;
   height: 350px;
   border: 1px solid #c9e1be;
-
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 menu img:hover {
@@ -293,8 +267,6 @@ article > p {
   color: #c9e1be;
 }
 
-/*-----------HACKATHON--------------*/
-
 h2 + p {
   color: rgb(49, 219, 49);
 }
@@ -303,76 +275,81 @@ h2 + p + p {
   color: red;
 }
 
-/*-----------CONTACTS--------------*/
-#contact-main{
+/*--------ANIMATIONS--------------*/
+@-webkit-keyframes emailSlidein {
+  0% {
+    position: relative;
+    right: 130px;
+  }
+  100% {
+    position: relative;
+    right: 0px;
+  }
+}
+@keyframes emailSlidein {
+  0% {
+    position: relative;
+    right: 130px;
+  }
+  100% {
+    position: relative;
+    right: 0px;
+  }
+}
+@-webkit-keyframes telSlidein {
+  0% {
+    position: relative;
+    left: 130px;
+  }
+  100% {
+    position: relative;
+    left: 0%;
+  }
+}
+@keyframes telSlidein {
+  0% {
+    position: relative;
+    left: 130px;
+  }
+  100% {
+    position: relative;
+    left: 0%;
+  }
+}
+#contact-main {
   display: grid;
   place-items: center;
   row-gap: 10px;
 }
 
-#contact-main>h1{
+#contact-main > h1 {
   background-color: antiquewhite;
   text-align: center;
   width: 100%;
-  
-
 }
 
-#contact-main>iframe{
+#contact-main > iframe {
   width: 80%;
 }
 
 .contact a {
   color: aliceblue;
   text-decoration: none;
-
   font-size: 1.2rem;
 }
 
-#email{
-  animation: emailSlidein 1s ease-in-out; 
+#email {
+  -webkit-animation: emailSlidein 1s ease-in-out;
+          animation: emailSlidein 1s ease-in-out;
 }
 
-#tel{
-  animation: telSlidein 1s ease-in-out;
+#tel {
+  -webkit-animation: telSlidein 1s ease-in-out;
+          animation: telSlidein 1s ease-in-out;
 }
-/*----------FOOTER-----------------------*/
-footer{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-  align-items: end;
-  align-items: center;
-  justify-items: center;
- 
-  background-image: url(../images/nightSky.jpg);
-  width: 100%;
-  height: fit-content;
-}
-
-footer {
-  display: grid;
-  grid-template-columns: auto;
-
-  
-
-
-  font-size: 1.5rem;
-  text-align: center;
-  color: red;
-}
-
-footer a {
-  font-size: 1.5rem;
-  color:#e4aa4d;
-  text-decoration: none;
-
-}
-
 
 /*-----------MEDIA QUERIES---------------------*/
 @media only screen and (min-width: 600px) {
-  
-  
   #logo-container {
     grid-template-columns: auto 1fr;
   }
@@ -393,8 +370,7 @@ footer a {
 }
 /*how to add more buttons- extra html needed- when screen size goes up*/
 /*add title back with logo for desktop*/
-@media only screen and (min-width: 1550px){
-
+@media only screen and (min-width: 1550px) {
   #logo-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -406,9 +382,7 @@ footer a {
     height: 400px;
   }
 
-
   #logo {
     display: none;
   }
-
-}
+}/*# sourceMappingURL=style.css.map */

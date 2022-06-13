@@ -1,0 +1,55 @@
+@use "header";
+@use "general";
+@use "footer";
+
+@use "page_index";
+@use "page_menu";
+@use "page_hackathons";
+@use "page_contact";
+
+
+
+
+/*-----------MEDIA QUERIES---------------------*/
+@media only screen and (min-width: 600px) {
+  
+  
+  #logo-container {
+    grid-template-columns: auto 1fr;
+  }
+
+  #logo {
+    width: 820px;
+    font-size: 5rem;
+  }
+
+  #logo-img {
+    padding: 25px;
+    justify-self: start;
+  }
+
+  .main-nav {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/*how to add more buttons- extra html needed- when screen size goes up*/
+/*add title back with logo for desktop*/
+@media only screen and (min-width: 1550px){
+
+  #logo-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #logo-img {
+    justify-self: center;
+    width: 400px;
+    height: 400px;
+  }
+
+
+  #logo {
+    display: none;
+  }
+
+}

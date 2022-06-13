@@ -1,0 +1,147 @@
+#logo-img {
+  width: 200px;
+  height: 200px;
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: black;
+  background-image: url(../images/nightSky.jpg);
+  background-size: 100%;
+  background-size: cover;
+  width: 100%;
+  min-height: 300px;
+}
+
+#logo-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  row-gap: 15px;
+  width: 100%;
+}
+
+#logo-img {
+  padding: 25px 25px 0 25px;
+}
+
+#logo {
+  color: #820000;
+  font-family: "Special Elite", cursive;
+  font-size: 3rem;
+  padding: 0 10px 10px;
+}
+
+/*----and Pizzeria----*/
+span {
+  color: #e4aa4d;
+  font-size: 1.8rem;
+  float: right;
+  margin-right: 25%;
+}
+
+/*---------NAV in header-----------------*/
+#nav-container {
+  background-color: #820000;
+  align-self: end;
+  min-height: 50px;
+}
+
+.main-nav {
+  display: grid;
+  grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+  justify-items: center;
+  font-size: 2rem;
+  margin: 10px, 15px, 10x, 15px;
+}
+
+.main-nav > a {
+  color: #e4aa4d;
+  text-decoration: none;
+  padding: 5px;
+}
+
+.main-nav > a:link {
+  color: antiquewhite;
+}
+
+.main-nav > a:visited {
+  color: #e4aa4d;
+}
+
+.main-nav a:hover {
+  font-size: 35px;
+  color: rgb(49, 219, 49);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgb(30, 34, 34);
+}
+
+#hoodoosMenu {
+  display: grid;
+  text-align: center;
+}
+
+#hoodoosMenu > h1 {
+  margin: 15px 0 0 0;
+}
+
+#hoodoosMenu > p {
+  font-size: 1em;
+  margin: 0 0 15px 0;
+}
+
+menu {
+  padding-right: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 10px;
+}
+
+menu img {
+  width: 250px;
+  height: 350px;
+  border: 1px solid #c9e1be;
+  transition: all 0.5s ease-in-out;
+}
+
+menu img:hover {
+  width: 260px;
+  height: 360px;
+  box-shadow: 3px 3px 5px 5px #087c6f;
+}
+
+menu > article {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  border: 4px solid #c9e1be;
+}
+
+article > h1 {
+  color: #c9e1be;
+  font-family: "Quintessential", cursive;
+}
+
+article > h4 {
+  width: 85%;
+  color: #c9e1be;
+}
+
+article > p {
+  color: #c9e1be;
+}/*# sourceMappingURL=page_menu.css.map */
