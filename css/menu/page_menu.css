@@ -89,6 +89,33 @@ body {
   background-color: rgb(30, 34, 34);
 }
 
+footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: end;
+  align-items: center;
+  justify-items: center;
+  background-image: url(../images/nightSky.jpg);
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  color: red;
+}
+
+footer a {
+  font-size: 1.5rem;
+  color: #e4aa4d;
+  text-decoration: none;
+}
+
 #hoodoosMenu {
   display: grid;
   text-align: center;

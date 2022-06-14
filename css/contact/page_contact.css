@@ -116,41 +116,75 @@ footer a {
   text-decoration: none;
 }
 
-/*-----------MEDIA QUERIES---------------------*/
-@media only screen and (min-width: 600px) {
-  #logo-container {
-    grid-template-columns: auto 1fr;
+/*--------ANIMATIONS--------------*/
+@-webkit-keyframes emailSlidein {
+  0% {
+    position: relative;
+    right: 130px;
   }
-
-  #logo {
-    width: 820px;
-    font-size: 5rem;
-  }
-
-  #logo-img {
-    padding: 25px;
-    justify-self: start;
-  }
-
-  .main-nav {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  100% {
+    position: relative;
+    right: 0px;
   }
 }
-/*how to add more buttons- extra html needed- when screen size goes up*/
-/*add title back with logo for desktop*/
-@media only screen and (min-width: 1550px) {
-  #logo-container {
-    display: grid;
-    grid-template-columns: 1fr;
+@keyframes emailSlidein {
+  0% {
+    position: relative;
+    right: 130px;
   }
+  100% {
+    position: relative;
+    right: 0px;
+  }
+}
+@-webkit-keyframes telSlidein {
+  0% {
+    position: relative;
+    left: 130px;
+  }
+  100% {
+    position: relative;
+    left: 0%;
+  }
+}
+@keyframes telSlidein {
+  0% {
+    position: relative;
+    left: 130px;
+  }
+  100% {
+    position: relative;
+    left: 0%;
+  }
+}
+#contact-main {
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+}
 
-  #logo-img {
-    justify-self: center;
-    width: 400px;
-    height: 400px;
-  }
+#contact-main > h1 {
+  background-color: antiquewhite;
+  text-align: center;
+  width: 100%;
+}
 
-  #logo {
-    display: none;
-  }
-}/*# sourceMappingURL=style.css.map */
+#contact-main > iframe {
+  width: 80%;
+}
+
+.contact a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#email {
+  -webkit-animation: emailSlidein 1s ease-in-out;
+          animation: emailSlidein 1s ease-in-out;
+}
+
+#tel {
+  -webkit-animation: telSlidein 1s ease-in-out;
+          animation: telSlidein 1s ease-in-out;
+}/*# sourceMappingURL=page_contact.css.map */
