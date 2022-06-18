@@ -28,7 +28,7 @@
 
 /*---------VARIABLES--------------*/
 $main-font-color: #e4aa4d;
-
+$main-background-color: antiquewhite;
 /*-----------MAIN--------------*/
 
 #page-main {
@@ -65,3 +65,22 @@ $main-font-color: #e4aa4d;
     }
   }
 }
+
+#about {
+  display: grid;
+  place-items: center;
+  text-align: center;
+
+  height: fit-content;
+  background-color: $main-background-color;
+
+
+  p{
+    width: 80%;
+  }
+
+}
+
+
+
+
